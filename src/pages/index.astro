@@ -1,0 +1,209 @@
+---
+import Base from '../layouts/Base.astro';
+
+const contactEmail = 'invest@southvillagedev.com';
+
+const work = [
+  { src: '/images/infill.jpg',    alt: 'Modern infill home with rooftop deck, Indianapolis', cap: 'Modern infill, rooftop deck — Indianapolis' },
+  { src: '/images/modern201.jpg', alt: 'Contemporary new-build home, Indianapolis',           cap: 'Contemporary new build — sold' },
+  { src: '/images/bungalow2.jpg', alt: 'Restored craftsman bungalow, near south side',        cap: 'Craftsman rebuild — near south side' },
+  { src: '/images/farmhouse.jpg', alt: 'Modern farmhouse new construction',                   cap: 'Ground-up modern farmhouse' },
+  { src: '/images/suburban.jpg',  alt: 'Two-story craftsman home, new construction',          cap: 'Two-story craftsman — delivered' },
+  { src: '/images/crew.jpg',      alt: 'Crew at work on a new build',                         cap: 'Our crews, mid-build' },
+  { src: '/images/interior.jpg',  alt: 'Finished bathroom interior with hexagonal tile',      cap: 'Interior finish standard' },
+  { src: '/images/multifam.jpg',  alt: 'Three-story multifamily building',                    cap: 'Multifamily experience' },
+  { src: '/images/render.jpg',    alt: 'Rendering of planned multifamily product',            cap: 'Pipeline product — rendering' },
+];
+
+const timeline = [
+  { when: 'Now – 2026',     what: 'Phase 1A production begins.', detail: 'Continuous single-family builds across five submarkets; first closings inside year one. Madison assemblage secured at pre-re-rate basis.' },
+  { when: '2026 – 2028',    what: 'Rezone window.',              detail: 'A 14–20 month target; the comp-plan designation converts the rezone from plan amendment to plan execution.' },
+  { when: '2027',           what: 'Road diet Phase 2 complete.', detail: 'The corridor fronting The Madison Project is fully delivered.' },
+  { when: 'Winter 2028',    what: 'Road diet Phase 3 (earliest).', detail: 'Corridor holds re-rate; hold parcels release into the pipeline.' },
+  { when: '2028 +',         what: 'Madison vertical construction.', detail: 'Begins immediately on rezone approval — no infrastructure wait.' },
+  { when: '2029 – 2030 +',  what: 'District delivery.',          detail: 'Madison stabilization and corridor positions capture the follow-on re-rate.' },
+];
+---
+<Base>
+
+<nav>
+  <a class="mark" href="#top">South Village</a>
+  <div class="links">
+    <a href="#moment">The moment</a>
+    <a href="#program">The program</a>
+    <a href="#work">Built work</a>
+    <a href="#team">Principals</a>
+    <a href="#contact">Inquire</a>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="hero-inner">
+    <p class="intro">South Village Development · Indianapolis, Indiana</p>
+    <h1>The near south side is re&#8209;pricing. We build ahead of it.</h1>
+    <p class="sub">A neighborhood-scale development program on the Madison Avenue corridor — led by a builder who has spent his life on the south side, timed to $47 million of city infrastructure already underway.</p>
+  </div>
+  <figure class="hero-photo">
+    <img src="/images/hero.jpg" alt="Completed craftsman rebuild on the near south side of Indianapolis" fetchpriority="high" />
+    <figcaption>Full rebuild, near south side — delivered</figcaption>
+  </figure>
+</header>
+
+<section id="moment">
+  <div class="wrap">
+    <p class="kicker">Why now</p>
+    <h2>The city is executing its own plan. We are building inside it.</h2>
+    <div class="rule"></div>
+    <div class="cols">
+      <div>
+        <p>Three conditions overlap on the near south side right now. The Madison Avenue Road Diet and the Interurban Trail — $47 million of funded public infrastructure — are under construction. Institutional projects are breaking ground blocks away. And pricing has not yet re-rated: the surrounding market still trades at a fraction of what new construction commands one neighborhood north.</p>
+        <p>In Bates-Hendricks, new builds close above $400,000 while the near-south median sits in the mid-$250s. That spread is the opportunity — and it narrows as the corridor delivers.</p>
+      </div>
+      <div>
+        <p>The funded Red Line extension runs directly down Madison Avenue. A 2024 Indiana Association of Realtors study documents a walkability premium of up to 27% — a premium this corridor does not yet price in, and will.</p>
+        <p>The program does not depend on a rezoning fight or a speculative masterplan. The city's comprehensive plan already designates the corridor for what we intend to build. Our work is execution of a public plan, on private land, ahead of the re-rate.</p>
+      </div>
+    </div>
+    <div class="figures">
+      <div>
+        <div class="n">$47M</div>
+        <div class="d">Funded city infrastructure — road diet and trail — under construction on the corridor</div>
+      </div>
+      <div>
+        <div class="n">~$150K</div>
+        <div class="d">Gap between the near-south median and new-construction pricing one neighborhood north</div>
+      </div>
+      <div>
+        <div class="n">27%</div>
+        <div class="d">Documented walkability premium, 2024 Indiana Association of Realtors study</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="program">
+  <div class="wrap">
+    <p class="kicker">The program</p>
+    <h2>An engine, an anchor, and the corridor itself.</h2>
+    <div class="rule"></div>
+    <div class="phases">
+      <div class="phase">
+        <div class="tag">Phase 1A</div>
+        <div>
+          <h3>The single-family engine</h3>
+          <p>Ten to fifteen homes per year, throttled to absorption, across five proven near-south submarkets. Proven comps in Bates-Hendricks and Old Southside, deliberate comp-setting in South Village, and volume product on Shelby. The engine produces closings and distributions from year one — it does not wait on any other phase.</p>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="tag">Phase 1B</div>
+        <div>
+          <h3>The Madison Project</h3>
+          <p>A mixed-use anchor development on an industrial assemblage the city's comprehensive plan already designates for exactly this use — making the rezone plan execution, not a plan amendment. Ten-year tax abatement eligibility is confirmed. Vertical construction begins on approval, with no infrastructure wait.</p>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="tag">Phase 1C</div>
+        <div>
+          <h3>Corridor positions</h3>
+          <p>Land control along Madison Avenue held through the final phase of the road diet. As the corridor delivers, these positions release into the pipeline — capturing the re-rate the first two phases help create.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <img src="/images/church.jpg" alt="Historic brick church tower on the near south side under restoration" loading="lazy" />
+  <div class="cap">
+    <p class="kicker">The fabric</p>
+    <p>The near south side was built once, well — brick churches, craftsman blocks, streetcar lots. Our work restores that fabric and adds to it, rather than replacing it.</p>
+  </div>
+</div>
+
+<section id="work">
+  <div class="wrap">
+    <p class="kicker">Built work</p>
+    <h2>The operator is not theoretical.</h2>
+    <div class="rule"></div>
+    <div class="cols">
+      <p>South Village is led on the ground by a builder with more than a decade of construction and development on the south side — thirty-plus homes delivered and over $17 million in real estate assets created across Indianapolis, Trafalgar, New Palestine, and Bloomington. Historic rebuilds, modern infill, suburban ground-up, multifamily.</p>
+      <p>Every photograph below is our own work. We publish it because an investor's first diligence question should already be answered on this page: yes, this team builds, finishes, and closes.</p>
+    </div>
+    <div class="grid">
+      {work.map((w) => (
+        <figure>
+          <img src={w.src} alt={w.alt} loading="lazy" />
+          <figcaption>{w.cap}</figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section id="team" style="padding-top:0">
+  <div class="wrap">
+    <p class="kicker">Principals</p>
+    <h2>Three principals. One operating system.</h2>
+    <div class="rule"></div>
+    <div class="team">
+      <div>
+        <img src="/images/gabe.jpg" alt="Portrait of Gabriel Lopez" loading="lazy" />
+        <h3>Gabriel Lopez</h3>
+        <p class="role">Operating Partner — Construction &amp; Development</p>
+        <p>A lifelong south-sider and president of Escanor Capital Investments. More than a decade building on the south side: 30+ homes, $17M+ in assets created. Gabe runs land, crews, product, and delivery.</p>
+      </div>
+      <div>
+        <div class="ph">C</div>
+        <h3>Cruz</h3>
+        <p class="role">Research &amp; Underwriting</p>
+        <p>A former Marine and the program's underwriter. Cruz built the corridor research — infrastructure timing, comp mapping, absorption discipline — that the entire program is sequenced against.</p>
+      </div>
+      <div>
+        <div class="ph">M</div>
+        <h3>Matthew</h3>
+        <p class="role">Capital Markets &amp; Investor Relations</p>
+        <p>Principal responsible for the program's capital partnerships. Matthew leads investor relationships from first conversation through closing, and remains the ongoing point of contact for capital partners.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="kicker">Sequence</p>
+    <h2>Sequenced, not speculative.</h2>
+    <div class="rule"></div>
+    <div class="timeline">
+      {timeline.map((t) => (
+        <div class="trow">
+          <div class="when">{t.when}</div>
+          <p><b>{t.what}</b> {t.detail}</p>
+        </div>
+      ))}
+    </div>
+    <p class="tfoot">Phase 1A cash flows do not wait on any of the above. The engine runs from day one.</p>
+  </div>
+</section>
+
+<section class="invite" id="contact">
+  <div class="wrap">
+    <p class="kicker">For qualified investors</p>
+    <h2>Request the confidential program overview.</h2>
+    <div class="rule"></div>
+    <p>Deal-level materials — economics, structure, and diligence files — are shared privately with qualified investors following an introductory conversation with the principals. We keep the capital partner group deliberately small.</p>
+    <a class="btn" href={`mailto:${contactEmail}?subject=Program%20overview%20request`}>Request the overview</a>
+    <p class="alt">Or write to us directly at <a href={`mailto:${contactEmail}`}>{contactEmail}</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="frow">
+      <div class="mark">South Village Development LLC</div>
+      <div>Indianapolis, Indiana</div>
+    </div>
+    <p class="legal">This website is for informational purposes only and does not constitute an offer to sell, or a solicitation of an offer to buy, any security. Any such offer or solicitation will be made only to qualified investors through definitive offering documents, and only in jurisdictions where permitted by law. Past performance is not indicative of future results. Market figures cited reflect third-party and public sources believed reliable but not independently verified. © South Village Development LLC.</p>
+  </div>
+</footer>
+
+</Base>
