@@ -13,8 +13,10 @@ const {
 <meta name="description" content={description} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content="/images/hero.jpg" />
+<meta property="og:image" content="/images/og-logo.jpg" />
 <meta property="og:type" content="website" />
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
@@ -57,7 +59,9 @@ nav{
   padding:28px clamp(20px,5vw,56px);
   color:var(--bone);
 }
-nav .mark{font-family:'Libre Caslon Display',serif;font-size:1.25rem;letter-spacing:.01em;text-decoration:none}
+nav .mark{display:flex;align-items:center;gap:12px;font-family:'Libre Caslon Display',serif;font-size:1.25rem;letter-spacing:.01em;text-decoration:none}
+nav .mark img{height:34px;width:auto}
+footer .fmark{height:40px;width:auto;margin-bottom:10px;opacity:.9}
 nav .links{display:flex;gap:28px;font-size:.85rem}
 nav .links a{text-decoration:none;color:var(--stone)}
 nav .links a:hover{color:var(--bone)}
