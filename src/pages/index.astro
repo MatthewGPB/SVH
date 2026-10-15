@@ -4,15 +4,15 @@ import Base from '../layouts/Base.astro';
 const contactEmail = 'invest@southvillagedev.com';
 
 const work = [
-  { src: '/images/infill.jpg',    alt: 'Modern infill home with rooftop deck, Indianapolis', cap: 'Modern infill, rooftop deck — Indianapolis' },
-  { src: '/images/modern201.jpg', alt: 'Contemporary new-build home, Indianapolis',           cap: 'Contemporary new build — sold' },
-  { src: '/images/bungalow2.jpg', alt: 'Restored craftsman bungalow, near south side',        cap: 'Craftsman rebuild — near south side' },
-  { src: '/images/farmhouse.jpg', alt: 'Modern farmhouse new construction',                   cap: 'Ground-up modern farmhouse' },
-  { src: '/images/suburban.jpg',  alt: 'Two-story craftsman home, new construction',          cap: 'Two-story craftsman — delivered' },
-  { src: '/images/crew.jpg',      alt: 'Crew at work on a new build',                         cap: 'Our crews, mid-build' },
-  { src: '/images/interior.jpg',  alt: 'Finished bathroom interior with hexagonal tile',      cap: 'Interior finish standard' },
-  { src: '/images/multifam.jpg',  alt: 'Three-story multifamily building',                    cap: 'Multifamily experience' },
-  { src: '/images/render.jpg',    alt: 'Rendering of planned multifamily product',            cap: 'Pipeline product — rendering' },
+  { src: '/images/infill.jpg',           alt: 'Modern infill home with rooftop deck, Indianapolis',          cap: 'Modern infill, rooftop deck — Indianapolis' },
+  { src: '/images/modern201.jpg',        alt: 'Contemporary new-build home with rooftop deck, Indianapolis', cap: 'Contemporary new build — sold' },
+  { src: '/images/rebuild-progress.jpg', alt: 'Craftsman bungalow rebuild in progress on a city lot',        cap: 'Craftsman rebuild in progress — near south side' },
+  { src: '/images/farmhouse.jpg',        alt: 'Modern farmhouse new construction nearing completion',        cap: 'Ground-up modern farmhouse — final stretch' },
+  { src: '/images/suburban.jpg',         alt: 'Two-story home, suburban new construction',                   cap: 'Suburban ground-up, two-story — delivered' },
+  { src: '/images/crew.jpg',             alt: 'Crews laying brick and finishing a new build',                cap: 'Our crews at work — brick and finish stage' },
+  { src: '/images/interior.jpg',         alt: 'Finished bathroom with hexagonal tile shower',                cap: 'Interior finish standard' },
+  { src: '/images/multifam.jpg',         alt: 'Three-story multifamily building with balconies',             cap: 'Multifamily experience — three-story garden apartments' },
+  { src: '/images/render.jpg',           alt: 'Rendering of planned four-unit multifamily product',          cap: 'Pipeline product — rendering' },
 ];
 
 const timeline = [
@@ -77,6 +77,68 @@ const timeline = [
         <div class="n">27%</div>
         <div class="d">Documented walkability premium, 2024 Indiana Association of Realtors study</div>
       </div>
+    </div>
+
+    <div class="map">
+      <svg viewBox="0 0 900 700" role="img" aria-label="Illustrative diagram of the Madison Avenue corridor showing the three road diet phases, the Interurban Trail, surrounding neighborhoods, and the Madison Project site">
+        <!-- neighborhood fields -->
+        <rect x="150" y="70"  width="240" height="110" rx="6" fill="#242B25" opacity="0.055"/>
+        <text x="270" y="130" text-anchor="middle" font-size="17" font-style="italic" fill="#43423A">Old Southside</text>
+        <rect x="520" y="70"  width="250" height="150" rx="6" fill="#242B25" opacity="0.055"/>
+        <text x="645" y="148" text-anchor="middle" font-size="17" font-style="italic" fill="#43423A">Bates-Hendricks</text>
+        <rect x="150" y="230" width="240" height="170" rx="6" fill="#8A3D2C" opacity="0.07"/>
+        <text x="270" y="310" text-anchor="middle" font-size="17" font-style="italic" fill="#6C3022">South Village</text>
+        <rect x="520" y="440" width="250" height="130" rx="6" fill="#242B25" opacity="0.055"/>
+        <text x="645" y="508" text-anchor="middle" font-size="17" font-style="italic" fill="#43423A">Garfield Park</text>
+
+        <!-- cross streets -->
+        <g stroke="#C9C6B8" stroke-width="1.5">
+          <line x1="130" y1="210" x2="790" y2="210"/>
+          <line x1="130" y1="420" x2="790" y2="420"/>
+          <line x1="130" y1="585" x2="790" y2="585"/>
+        </g>
+        <g font-size="12.5" font-style="italic" fill="#8B8A7D">
+          <text x="790" y="204" text-anchor="end">Morris St</text>
+          <text x="700" y="414" text-anchor="end">Raymond St</text>
+          <text x="790" y="579" text-anchor="end">Pleasant Run Pkwy</text>
+        </g>
+
+        <!-- Shelby St -->
+        <line x1="745" y1="240" x2="745" y2="565" stroke="#C9C6B8" stroke-width="1.5"/>
+        <text x="760" y="330" font-size="12.5" font-style="italic" fill="#8B8A7D" transform="rotate(90 760 330)">Shelby St</text>
+
+        <!-- Interurban Trail -->
+        <line x1="482" y1="90" x2="482" y2="600" stroke="#8A3D2C" stroke-width="2.5" stroke-dasharray="2 7" stroke-linecap="round"/>
+        <text x="498" y="268" font-size="12.5" font-style="italic" fill="#8A3D2C" transform="rotate(90 498 268)">Interurban Trail — funded</text>
+
+        <!-- Madison Ave spine, phased -->
+        <line x1="455" y1="40"  x2="455" y2="235" stroke="#242B25" stroke-width="13" stroke-linecap="round"/>
+        <line x1="455" y1="235" x2="455" y2="440" stroke="#8A3D2C" stroke-width="13"/>
+        <line x1="455" y1="440" x2="455" y2="620" stroke="#A8A79A" stroke-width="13" stroke-dasharray="14 10" stroke-linecap="round"/>
+        <text x="438" y="138" font-size="14.5" fill="#26261F" letter-spacing=".04em" transform="rotate(-90 438 138)" text-anchor="middle">MADISON AVENUE</text>
+
+        <!-- endpoints -->
+        <circle cx="455" cy="40" r="5.5" fill="#242B25"/>
+        <text x="455" y="24" text-anchor="middle" font-size="13.5" font-style="italic" fill="#43423A">to Fountain Square &amp; Downtown</text>
+        <text x="455" y="646" text-anchor="middle" font-size="13.5" font-style="italic" fill="#43423A">corridor continues south</text>
+
+        <!-- Madison Project marker -->
+        <rect x="430" y="328" width="22" height="22" fill="#F1EFE8" stroke="#8A3D2C" stroke-width="2.5"/>
+        <line x1="430" y1="339" x2="330" y2="339" stroke="#8A3D2C" stroke-width="1.2"/>
+        <text x="324" y="334" text-anchor="end" font-size="14.5" fill="#6C3022">The Madison Project</text>
+        <text x="324" y="351" text-anchor="end" font-size="12" font-style="italic" fill="#8B8A7D">mixed-use anchor site</text>
+
+        <!-- legend -->
+        <g font-size="13" fill="#43423A">
+          <line x1="150" y1="684" x2="186" y2="684" stroke="#242B25" stroke-width="9" stroke-linecap="round"/>
+          <text x="196" y="689">Road diet Phase 1 — underway</text>
+          <line x1="412" y1="684" x2="448" y2="684" stroke="#8A3D2C" stroke-width="9"/>
+          <text x="458" y="689">Phase 2 — 2027</text>
+          <line x1="610" y1="684" x2="646" y2="684" stroke="#A8A79A" stroke-width="9" stroke-dasharray="11 8" stroke-linecap="round"/>
+          <text x="656" y="689">Phase 3 — winter 2028</text>
+        </g>
+      </svg>
+      <p class="mapnote">Illustrative diagram of the corridor — schematic, not to scale. $47M road diet and trail per City of Indianapolis DPW; phase timing per public project schedule.</p>
     </div>
   </div>
 </section>
@@ -153,16 +215,16 @@ const timeline = [
         <p>A lifelong south-sider and president of Escanor Capital Investments. More than a decade building on the south side: 30+ homes, $17M+ in assets created. Gabe runs land, crews, product, and delivery.</p>
       </div>
       <div>
-        <div class="ph">C</div>
-        <h3>Cruz</h3>
-        <p class="role">Research &amp; Underwriting</p>
-        <p>A former Marine and the program's underwriter. Cruz built the corridor research — infrastructure timing, comp mapping, absorption discipline — that the entire program is sequenced against.</p>
+        <div class="ph">CA</div>
+        <h3>Cruz Arboneaux</h3>
+        <p class="role">Operating Partner — Research &amp; Underwriting</p>
+        <p>A Marine Corps veteran and the program's underwriter. Cruz built the research the program is sequenced against — parcel-level acquisition mapping, infrastructure timing, comp bands, absorption discipline — and every acquisition is gated against it.</p>
       </div>
       <div>
-        <div class="ph">M</div>
-        <h3>Matthew</h3>
-        <p class="role">Capital Markets &amp; Investor Relations</p>
-        <p>Principal responsible for the program's capital partnerships. Matthew leads investor relationships from first conversation through closing, and remains the ongoing point of contact for capital partners.</p>
+        <div class="ph">MD</div>
+        <h3>Matthew Durnya</h3>
+        <p class="role">Principal — Capital Markets &amp; Investor Relations</p>
+        <p>An entrepreneur and brand builder based in Palm Beach, Florida. Matthew owns the program's capital partnerships end to end — from first conversation through closing — and remains each partner's ongoing point of contact. He also leads the program's brand and communications.</p>
       </div>
     </div>
   </div>
